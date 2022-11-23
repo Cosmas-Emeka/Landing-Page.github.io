@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --general-color: darkslateblue;
+    --sec-color: brown;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background: var(--sec-color);
+    height: 6rem;
+    width: 100%;
+}
+
+.logo {
+    color: #000;
+    font-size: 35px;
+    line-height: 6rem;
+    padding: 0 6.2rem;
+    font-weight: 700;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.links {
+    float: right;
+    margin-right: 1.3rem;
+}
+
+.links a {
+    display: inline-block;
+    line-height: 6rem;
+    margin: 0 0.313rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
