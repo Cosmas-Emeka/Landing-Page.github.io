@@ -1,47 +1,360 @@
-* {
+*,::before,::after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+    display: none;
 }
 
-:root {
-    --general-color: darkslateblue;
-    --sec-color: brown;
+html{
+    box-sizing: border-box;
 }
 
 body{
+    background-color: #fff;
+    color: linen;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-nav {
-    background: var(--sec-color);
-    height: 6rem;
-    width: 100%;
+:root{
+    --general-color: black;
+    --general-color2: #fff;
+    --title-color: gold;
+    --title-color2: gold;
+    --color1: darkslateblue; 
+    --color2: darkslateblue;
+    --color3: brown;
+    --color4: blue;
+    --color6: #808080;
 }
 
-.logo {
-    color: #000;
-    font-size: 35px;
-    line-height: 6rem;
-    padding: 0 6.2rem;
-    font-weight: 700;
+#nav-section{
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    font-size: 1rem;
 }
 
-.menu-icon {
-    width: 30px;
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: var(--general-color);
+}
+#header-img{
+    width: 40px;
     height: 30px;
 }
 
-.links {
-    float: right;
-    margin-right: 1.3rem;
+#nav-section p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--title-color);
+    letter-spacing: 0.7px;
+    justify-content: flex-start;
 }
 
-.links a {
+#nav-bar{
+    display: flex;
+    padding-top: 0.5vh;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--general-color);
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(
+        180deg,
+        var(--color6),
+        var(--general-color),
+        var(--color6)
+    );
+    margin-bottom: 4px;
+    width: 56px;
+}
+
+figcaption{
+    color: #fff;
+    margin-top: 0.2vh;
+    text-align: center;
+}
+
+.nav-link:hover{
+    background: linear-gradient(
+        90deg,
+        var(--color6),
+        var(--general-color),
+        var(--color6)
+    );
+}
+
+.nav-logo{
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+}
+
+.nav-logo:hover{
+    background: linear-gradient(
+        180deg,
+        var(--color5),
+        var(--color6),
+        var(--color5)
+    );
+}
+
+
+.container {
+    position: relative;
+    top: 6vh;
+}
+
+#home-section{
+    background: var(--color1);
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+}
+
+.description-wrapper{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.description{
+    padding-top: 2rem;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+.recognized-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+}
+
+.recognized{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+}
+
+.link p{
+    text-align: center;
+}
+
+#start-link, #top{
+    font-size: 1.2rem;
+    color: var(--general-color2);
+    background-color: var(--general-color);
+    border: 1px solid var(--general-color);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 12px 12px;
     display: inline-block;
-    line-height: 6rem;
-    margin: 0 0.313rem;
+    margin-top: 8vh;
+}
+
+#start-link:hover{
+    background-color: var(--general-color2);
+    color: var(--general-color);
+}
+
+#courses{
+    background-color: var(--color2);
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    /*animation: courses 2s linear 1;*/
+}
+
+.course-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    border-radius: 10px;
+    padding: 8px 8px;
+    margin: 1vh auto;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: var(--color3);
+    box-shadow: inset 0px 0px 3px 3px rgb(95, 26, 26);
+}
+
+@media (max-width: 500px) {
+    .course-link{
+        width: 70%;
+    }
+}
+
+.course-link:hover{
+    box-shadow: 0px 0px 5px 5px rgb(95, 26, 26);
+    transform: translateY(-3px) scale(1);
+    transition: transform 0.5s ease-in;
+    color: #fff;
+}
+
+.course-logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 4vw;
+    margin-right: 2vw;
+}
+
+#user-input{
+    background-color: var(--color2);
+    padding-bottom: 5vh;
+}
+
+#email{
+    display: block;
+    margin: 1vh auto 0 auto;
+    width: 40%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 481px){
+    #email::placeholder{
+        font-size: 1rem;
+    }
+}
+
+#submit, #top{
+    width: 20%;
+    display: block;
+    margin: 1vh auto 0 auto;
+    font-weight: bolder;
+    font-size: 100%;
+    background-color: var(--general-color);
+    color: var(--color5);
+    cursor: pointer;
+    border-color: var(--color5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#submit:hover{
+    background-color: var(--color6);
+    color: var(--color);
+    border-color: var(--general-color);
+}
+
+
+#video{
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    margin: 1vh auto 2vh auto;
+}
+
+@media (max-width: 768px){
+    #video{
+        width: 80%;
+        height: 100%;
+    }
+}
+
+footer{
+    background-color: dimgrey;
+    color: #000;
+    font-family: monospace;
+    padding-bottom: 2vh;
+}
+
+.contact{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vh auto;
+}
+
+.media-icon{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1000px){
+    .media-icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.sec-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 481px){
+    .sec-wrapper{
+        font-size: 0.8rem;
+    }
+}
+
+.footer-link, #title-link{
+    color: #0a0a23;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: #d0d0d5;
+}
+
+#visible{
+    text-align: center;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    margin-top: 1vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 768px){
+    #visible{
+        font-size: 0.8rem;
+    }
+}
+
+#title-sm{
+    color: var(--title-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+#top{
+    color: var(--general-color2);
+}
+
+@keyframes courses {
+    0%{
+        transform: scale(4.5) translate(50%, 0);
+    }
+}
+
+
+hr{
+    border-radius: 50%;
+}
+
+
+
+@media (max-width: 481px) {
+    body{
+        font-size: smaller;
+    }
 }
