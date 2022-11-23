@@ -16,7 +16,7 @@ nav{
     width: 100%;
 }
 
-label.logo {
+.logo {
     color: #fff;
     font-size: 35px;
     line-height: 80px;
@@ -90,14 +90,14 @@ img {
         height: 100vh;
         background: rgb(217, 102, 102);
         top: 80px;
-        left: 0;
+        left: -100%;
         text-align: center;
         transition: all .5s;
     }
     nav ul li {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 3rem 0;
+        line-height: 2rem;
     }    
     nav ul li a {
         font-size: 20px;
