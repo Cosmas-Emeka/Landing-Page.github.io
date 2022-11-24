@@ -29,7 +29,7 @@ nav {
     color: var(--logo-color);
     font-size: 1.8rem;
     line-height: 4rem;
-    padding: 0 6.2rem 0 2rem;
+    padding: 0 6rem 0 2rem;
     font-weight: 500;
 }
 
@@ -78,7 +78,7 @@ nav {
         position: fixed;
         width: 95%;
         border-radius: 10px;
-        height: 100vh;
+        height: 80vh;
         background: rgb(149, 130, 23);
         top: 80px;
         left: -100%;
@@ -87,7 +87,10 @@ nav {
     }
 
     .links a {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
         margin: 3rem 0;
         line-height: 2rem;
         font-size: 1.2rem;
@@ -102,6 +105,15 @@ nav {
     .menu-icon {
         display: block;
         margin-top: 1rem;
+    }
+    .menu-icon::content {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 481px) {
+    *{
+        font-size: small;
     }
 }
 /* End of navigation setup */
