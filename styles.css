@@ -78,17 +78,21 @@ nav {
         position: fixed;
         width: 95%;
         border-radius: 10px;
-        height: 60vh;
+        height: 80vh;
         background: rgb(149, 130, 23);
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
+        overflow: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
     }
-
+    .links::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
     .links a {
         display: flex;
-        align-items: center;
         justify-content: center;
         padding: 0.5rem 1rem;
         margin: 3rem 0;
