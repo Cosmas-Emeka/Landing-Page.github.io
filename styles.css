@@ -29,7 +29,7 @@ nav {
     color: var(--logo-color);
     font-size: 1.8rem;
     line-height: 4rem;
-    padding: 0 4rem 0 2rem;
+    padding: 0 3rem 0 2rem;
     font-weight: bold;
 }
 
@@ -125,11 +125,14 @@ nav {
 }
 
 @media (max-width: 481px) {
-    *{
+    * {
         font-size: small;
     }
     .logo {
         font-size: 1.5rem;
+    }
+    .links {
+        top: 65px;
     }
 }
 /* End of navigation setup */
