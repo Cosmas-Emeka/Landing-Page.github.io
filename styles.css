@@ -42,7 +42,7 @@ nav {
     display: none;
 }
 
-.menu-icon:active {
+.menu-icon:hover {
     background: rgb(149, 130, 23);
     transition: 0.7s;
     color: #000;
