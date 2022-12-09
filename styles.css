@@ -31,12 +31,41 @@ nav {
     z-index: 10;
 }
 
-.logo {
-    color: var(--logo-color);
-    font-size: 1.8rem;
-    line-height: 4rem;
-    padding: 0 3rem 0 2rem;
-    font-weight: bold;
+.logo-wrapper {
+    width: 80px;
+    height: 35px;
+    margin-left: 3rem;
+    background: #000;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+/* Logo Design */
+.logo-wrapper .first, .second {
+    position: absolute;
+    top: 6px;
+    left: 73px;
+    width: 10px;
+    height: 20px;
+    background: var(--nav-color);
+    border-radius: 50%;
+}
+
+
+
+.second {
+    top: 30px;
+}
+
+@media (max-width: 490px) {
+    .logo {
+        padding: 0.7rem;
+    }
 }
 
 .menu-icon {
@@ -82,57 +111,6 @@ nav {
 
 #check {
     display: none;
-}
-
-.container {
-    position: relative;
-    width: 95%;
-    height: 90vh;
-    background: #000;
-    display: block;
-    margin: 0 auto;
-    top: 4.2rem;
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container h1 {
-    color: var(--logo-color);
-}
-
-.letters {
-    width: 40px;
-    height: 40px;
-}
-
-@media (max-width: 490px) {
-    .letters {
-        width: 25px;
-        height: 25px;
-    }
-    .container h1 {
-        font-size: 1.4rem;
-    }
-}
-
-.start {
-    display: block;
-    margin-top: 2rem;
-    background: greenyellow;
-    color: #000;
-    font-size: 1.3rem;
-    font-weight: bolder;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid greenyellow;
-}
-
-.start:hover {
-    border: var(--links);
-    padding: 7px;
 }
 
 @media (max-width: 960px) {
@@ -185,11 +163,53 @@ nav {
     * {
         font-size: small;
     }
-    .logo {
-        font-size: 1.5rem;
-    }
     .links {
         top: 65px;
     }
 }
 /* End of navigation setup */
+
+.container {
+    position: relative;
+    width: 95%;
+    height: 90vh;
+    background: #000;
+    display: block;
+    margin: 0 auto;
+    top: 4.2rem;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    color: var(--logo-color);
+}
+
+.letters {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 490px) {
+    .letters {
+        width: 25px;
+        height: 25px;
+    }
+    .container h1 {
+        font-size: 1.3rem;
+    }
+}
+
+.start {
+    margin-top: 2rem;
+    background: greenyellow;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px solid greenyellow;
+}
