@@ -33,39 +33,32 @@ nav {
 
 .logo-wrapper {
     width: 80px;
-    height: 35px;
+    height: 40px;
     margin-left: 3rem;
     background: #000;
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
     border-radius: 5px;
 }
 
 .logo-img {
     width: 30px;
     height: 30px;
-    margin-left: 5px;
+    margin-top: 3px;
+    margin-left: 6px;
 }
 /* Logo Design */
 .logo-wrapper .first, .second {
     position: absolute;
     top: 6px;
-    left: 73px;
+    left: 83px;
     width: 10px;
     height: 20px;
     background: var(--nav-color);
     border-radius: 50%;
 }
 
-
-
 .second {
     top: 30px;
-}
-
-@media (max-width: 490px) {
-    .logo {
-        padding: 0.7rem;
-    }
 }
 
 .menu-icon {
@@ -85,11 +78,12 @@ nav {
 .links {
     float: right;
     margin-right: 1.3rem;
+    margin-top: -1.5rem;
 }
 
 .links a {
     display: inline-block;
-    margin: 1rem 0.3rem;
+    margin: -2rem 0.3rem;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     color: #fff;
@@ -160,9 +154,6 @@ nav {
 }
 
 @media (max-width: 481px) {
-    * {
-        font-size: small;
-    }
     .links {
         top: 65px;
     }
