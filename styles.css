@@ -141,7 +141,7 @@ nav {
         background: none;
     }
     #check:checked ~ .links {
-        top: 4.23rem;
+        top: 5.7rem;
         left: 2.5%;
     }
     .menu-icon {
@@ -190,7 +190,7 @@ nav {
         height: 25px;
     }
     .container h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
