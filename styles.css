@@ -40,6 +40,14 @@ nav {
     border-radius: 5px;
 }
 
+@media (max-width: 490px) {
+    .logo-wrapper {
+        margin-top: 0.4rem;
+        width: 70px;
+        height: 35px;
+    }
+}
+
 .logo-img {
     width: 30px;
     height: 30px;
@@ -59,6 +67,22 @@ nav {
 
 .second {
     top: 30px;
+}
+
+@media (max-width: 490px) {
+    .logo-img {
+        width: 25px;
+        height: 25px;
+    }
+    .logo-wrapper .first, .second {
+        width: 8px;
+        height: 18px;
+        top: 2px;
+        left: 45px;
+    }
+    .second {
+        top: 25px;
+    }
 }
 
 .menu-icon {
@@ -141,7 +165,7 @@ nav {
         background: none;
     }
     #check:checked ~ .links {
-        top: 5.2rem;
+        top: 5.7rem;
         left: 2.5%;
     }
     .menu-icon {
@@ -186,6 +210,9 @@ nav {
     }
     .container h1 {
         font-size: 1.2rem;
+    }
+    * {
+        font-size: small;
     }
 }
 
