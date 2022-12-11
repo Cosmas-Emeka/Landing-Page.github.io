@@ -9,10 +9,11 @@
     --logo-color: gold;
     --nav-color: rgb(174, 72, 72);
     --links: rgb(232, 198, 2);
+    --bg-color: rgb(16, 16, 51);
 }
 
 html {
-    background-color: rgb(16, 16, 51);
+    background-color: var(--bg-color);
 }
 
 body{
@@ -29,6 +30,7 @@ nav {
     left: 2.5%;
     border-radius: 10px 10px 0px 0px;
     z-index: 10;
+    box-shadow: 0px 0px 5px 5px rgb(48, 15, 15);
 }
 
 .logo-wrapper {
@@ -183,7 +185,8 @@ nav {
     position: relative;
     width: 95%;
     height: 90vh;
-    background: #000;
+    background: rgb(26, 26, 105);
+    box-shadow: 0px 0px 5px 5px rgb(5, 5, 17);
     display: block;
     margin: 0 auto;
     top: 3.7rem;
