@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media (max-width: 490px) {
+    * {
+        font-size: small;
+    }
+}
+
+:root {
+    --logo-color: gold;
+    --link-color: rgb(174, 72, 72);
+    --links: rgb(232, 198, 2);
+    --bg-color: rgb(16, 16, 51);
+    --fg-color: rgb(26, 26, 105);
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: var(--fg-color);
+    color: #fff;
+}
+
+.logo-wrapper {
+    width: 80px;
+    height: 40px;
+    margin-left: 1.8rem;
+    background: #000;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 490px) {
+    .logo-wrapper {
+        margin-top: 0.4rem;
+        width: 70px;
+        height: 35px;
+    }
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+/* Logo Design */
+.logo-wrapper .first, .second {
+    position: absolute;
+    top: 6px;
+    left: 4rem;
+    width: 10px;
+    height: 20px;
+    background: var(--fg-color);
+    border-radius: 50%;
+}
+
+.second {
+    top: 30px;
+}
+
+@media (max-width: 490px) {
+    .logo-img {
+        width: 25px;
+        height: 25px;
+    }
+    .logo-wrapper .first, .second {
+        width: 8px;
+        height: 18px;
+        top: 2px;
+        left: 4.15rem;
+    }
+    .second {
+        top: 25px;
+    }
+}
+
+
+
+.container {
+    padding: 1rem;
+}
+
+h1, h3 {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.course-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    border-radius: 10px;
+    padding: 8px 8px;
+    margin: 1vh auto;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: var(--link-color);
+    box-shadow: inset 0px 0px 3px 3px rgb(95, 26, 26);
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .course-link{
+        width: 70%;
+    }
+}
+
+.course-link:hover{
+    transform: translateY(-3px) scale(1);
+    transition: transform 0.5s ease-in;
+}
+
+.course-logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 4vw;
+    margin-right: 2vw;
+}
