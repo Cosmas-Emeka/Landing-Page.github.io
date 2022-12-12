@@ -15,13 +15,13 @@
     --logo-color: gold;
     --link-color: ;
     --links: rgb(232, 198, 2);
-    --bg-color: rgb(227, 224, 224);
-    --fg-color: #fff;
+    --bg-color: rgb(174, 72, 72);
+    --pry-color: rgb(26, 26, 105);
 }
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: var(--fg-color);
+    background: var(--bg-color);
     color: #000;
 }
 
@@ -83,17 +83,24 @@ body{
 
 .container {
     padding: 1rem;
-    width: 95%;
+    width: 90%;
     display: block;
     margin: 3rem auto;
     border: 0px solid #000;
     box-shadow: 0px 0px 3px 3px rgb(26, 24, 24);
     border-radius: 20px;
+    background: #fff;
 }
+
+
 
 h1, h3 {
     text-align: left;
     font-size: 1.2rem;
+}
+
+.courses-wrapper {
+    margin-top: 4rem;
 }
 
 .course-link, .two {
@@ -146,4 +153,7 @@ h1, h3 {
     height: 40px;
     margin-left: 4vw;
     margin-right: 2vw;
+    background: var(--pry-color);
+    border-radius: 5px;
+    padding: 2px;
 }
