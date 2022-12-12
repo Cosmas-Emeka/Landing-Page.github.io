@@ -91,9 +91,24 @@ body{
     border-radius: 20px;
     background: #fff;
 }
+/*
+.un, .deux, .trois, .quatre, .cinq, .six {
+    position: absolute;
+    background: var(--pry-color);
+    width: 100px;
+    height: 50px;
+    z-index: 0;
+}
 
+.un {
+    top: 20rem;
+    left: 6rem;
+}
 
-
+.container-wrapper {
+    z-index: 100;
+}
+*/
 .container p {
     text-align: left;
     font-size: 1.2rem;
