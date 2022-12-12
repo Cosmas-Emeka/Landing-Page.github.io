@@ -15,8 +15,8 @@
     --logo-color: gold;
     --link-color: ;
     --links: rgb(232, 198, 2);
-    --bg-color: rgb(174, 72, 72);
-    --pry-color: rgb(26, 26, 105);
+    --bg-color: rgb(26, 26, 105);
+    --pry-color: rgb(174, 72, 72);
 }
 
 body{
@@ -55,7 +55,7 @@ body{
     left: 4rem;
     width: 10px;
     height: 20px;
-    background: var(--fg-color);
+    background: var(--bg-color);
     border-radius: 50%;
 }
 
@@ -155,5 +155,5 @@ h1, h3 {
     margin-right: 2vw;
     background: var(--pry-color);
     border-radius: 5px;
-    padding: 2px;
+    padding: 5px;
 }
