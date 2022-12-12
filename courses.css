@@ -94,9 +94,15 @@ body{
 
 
 
-h1, h3 {
+.container p {
     text-align: left;
     font-size: 1.2rem;
+}
+
+.container h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 .courses-wrapper {
@@ -116,7 +122,7 @@ h1, h3 {
     color: #000;
     background-color: var(--link-color);
     box-shadow: 0px 0px 3px 3px rgb(28, 26, 26);
-    font-weight: bold;
+    font-weight: 600;
     animation: course-link 3s linear 1;
     animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
