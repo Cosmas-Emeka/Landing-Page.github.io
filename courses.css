@@ -13,16 +13,16 @@
 
 :root {
     --logo-color: gold;
-    --link-color: rgb(174, 72, 72);
+    --link-color: ;
     --links: rgb(232, 198, 2);
-    --bg-color: rgb(16, 16, 51);
-    --fg-color: rgb(26, 26, 105);
+    --bg-color: rgb(227, 224, 224);
+    --fg-color: #fff;
 }
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: var(--fg-color);
-    color: #fff;
+    color: #000;
 }
 
 .logo-wrapper {
@@ -83,6 +83,12 @@ body{
 
 .container {
     padding: 1rem;
+    width: 95%;
+    display: block;
+    margin: 3rem auto;
+    border: 0px solid #000;
+    box-shadow: 0px 0px 3px 3px rgb(26, 24, 24);
+    border-radius: 20px;
 }
 
 h1, h3 {
@@ -90,20 +96,38 @@ h1, h3 {
     font-size: 1.2rem;
 }
 
-.course-link{
+.course-link, .two {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 50%;
     border-radius: 10px;
     padding: 8px 8px;
-    margin: 1vh auto;
+    margin: 1.4vh auto;
     text-decoration: none;
     font-size: 1.1rem;
     color: #000;
     background-color: var(--link-color);
-    box-shadow: inset 0px 0px 3px 3px rgb(95, 26, 26);
+    box-shadow: 0px 0px 3px 3px rgb(28, 26, 26);
     font-weight: bold;
+    animation: course-link 3s linear 1;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.two {
+    animation-name: two;
+}
+
+@keyframes course-link {
+    0% {
+        transform: scale(2) translate(50%, 0);
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: scale(2) translate(-50%, 0);
+    }
 }
 
 @media (max-width: 500px) {
