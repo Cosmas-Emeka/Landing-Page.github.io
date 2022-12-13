@@ -7,10 +7,10 @@
 
 :root {
     --logo-color: gold;
-    --nav-color: rgb(174, 72, 72);
+    --nav-color: #fff;
     --links: rgb(232, 198, 2);
-    --bg-color: rgb(16, 16, 51);
-    --fg-color: rgb(26, 26, 105);
+    --bg-color: rgb(16, 51, 18);
+    --fg-color: rgb(26, 105, 58);
 }
 
 html {
@@ -113,14 +113,14 @@ nav {
     margin: -2rem 0.3rem;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    color: #fff;
+    color: #000;
     border-radius: 3px;
+    font-weight: bold;
 }
 
 .links a:active, a:hover {
     background: var(--logo-color);
     transition: 0.7s;
-    color: #000;
 }
 
 .check-btn {
@@ -166,6 +166,7 @@ nav {
     }
     .links a:hover, .link a:active {
         background: none;
+        color: #fff;
     }
     #check:checked ~ .links {
         top: 5.7rem;

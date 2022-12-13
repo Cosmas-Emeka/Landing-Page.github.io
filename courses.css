@@ -1,3 +1,4 @@
+/* Basic Setup */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@
     --logo-color: gold;
     --link-color: ;
     --links: rgb(232, 198, 2);
-    --bg-color: rgb(26, 26, 105);
+    --bg-color: rgb(26, 105, 58);
     --pry-color: rgb(174, 72, 72);
 }
 
@@ -24,7 +25,10 @@ body{
     background: var(--bg-color);
     color: #000;
 }
+/* End */
 
+
+/* CA Logo Design */
 .logo-wrapper {
     width: 80px;
     height: 40px;
@@ -48,7 +52,7 @@ body{
     margin-left: 6px;
     margin-top: 4px;
 }
-/* Logo Design */
+
 .logo-wrapper .first, .second {
     position: absolute;
     top: 6px;
@@ -78,9 +82,9 @@ body{
         top: 25px;
     }
 }
+/* End */
 
-
-
+/* Container */
 .container {
     padding: 1rem;
     width: 90%;
@@ -91,6 +95,7 @@ body{
     border-radius: 20px;
     background: #fff;
 }
+
 /*
 .un, .deux, .trois, .quatre, .cinq, .six {
     position: absolute;
@@ -109,6 +114,7 @@ body{
     z-index: 100;
 }
 */
+
 .container p {
     text-align: left;
     font-size: 1.2rem;
@@ -116,27 +122,33 @@ body{
 
 .container h1 {
     text-align: center;
-    text-decoration: underline;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
+/* Courses Cards Design */
 .courses-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 4rem;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
 }
 
-.course-link, .two {
+.courses-wrapper p {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
+}
+
+.courses-wrapper p a, .courses-wrapper p .two {
+    width: 130px;
+    height: 150px;
+    padding: 0 0.5rem;
     border-radius: 10px;
-    padding: 8px 8px;
-    margin: 1.4vh auto;
-    text-decoration: none;
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 1rem;
     color: #000;
-    background-color: var(--link-color);
-    box-shadow: 0px 0px 3px 3px rgb(28, 26, 26);
+    border: 3px ridge #000;
     font-weight: 600;
     animation: course-link 3s linear 1;
     animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -148,33 +160,26 @@ body{
 
 @keyframes course-link {
     0% {
-        transform: scale(2) translate(50%, 0);
+        transform: scale(1) translate(-50%, -50%);
     }
 }
 
 @keyframes two {
     0% {
-        transform: scale(2) translate(-50%, 0);
+        transform: scale(5) translate(-50%, 0);
     }
 }
 
-@media (max-width: 500px) {
-    .course-link{
-        width: 70%;
-    }
-}
-
-.course-link:hover{
+.courses-wrapper p a:hover{
     transform: translateY(-3px) scale(1);
     transition: transform 0.5s ease-in;
 }
 
-.course-logo{
-    width: 40px;
-    height: 40px;
-    margin-left: 4vw;
-    margin-right: 2vw;
-    background: var(--pry-color);
+.courses-wrapper p a img{
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
-    padding: 5px;
 }
