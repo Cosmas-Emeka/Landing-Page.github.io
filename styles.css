@@ -8,7 +8,8 @@
 :root {
     --logo-color: gold;
     --nav-color: rgb(240, 238, 238);
-    --links: rgb(232, 198, 2);
+    --links: greenyellow;
+    --links-hover: rgb(232, 198, 2);
     --bg-color: rgb(16, 51, 18);
     --fg-color: rgb(26, 105, 58);
 }
@@ -95,10 +96,11 @@ nav {
     color: #000;
     padding: 6px;
     display: none;
+    border: 1px solid #000;
 }
 
 .menu-icon:hover {
-    background: rgb(149, 130, 23);
+    background: var(--links-hover);
     color: #000;
 }
 
@@ -110,12 +112,14 @@ nav {
 
 .links a {
     display: inline-block;
-    margin: -2rem 0.3rem;
+    margin: -2rem 1rem;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 5px 10px;
     color: #000;
     border-radius: 3px;
     font-weight: bold;
+    background: greenyellow;
+    border: 1px solid #000;
 }
 
 .links a:active, a:hover {
@@ -163,6 +167,8 @@ nav {
         margin: 3rem 0;
         line-height: 2rem;
         font-size: 1.2rem;
+        border: none;
+        background: none;
     }
     .links a:hover, .link a:active {
         background: none;
@@ -223,11 +229,11 @@ nav {
 
 .start {
     margin-top: 2rem;
-    background: greenyellow;
+    background: var(--links);
     color: #000;
     font-size: 1.3rem;
     font-weight: bolder;
     padding: 10px;
     border-radius: 5px;
-    border: 0px solid greenyellow;
+    border: 1px solid #000;
 }
