@@ -229,6 +229,7 @@ body{
     border-radius: 5px;
     text-align: center;
     font-size: 1.1rem;
+    border: 1px solid #000;
 }
 
 .begin a:hover {
